@@ -339,33 +339,44 @@ h3, h2, h1 {
 .section-2 {
   background: radial-gradient(111.90% 48.53% at 50.00% 50.00%, rgba(241, 118, 111, 0.13) 38.02%, rgba(68, 196, 166, 0.09) 53.65%, rgba(126, 2, 2, 0.11) 84.38%), #121214;
   margin: 0;
-  height: 100vh;
+  height: relative;
   align-items: center;
-  display: grid;
-  grid-template-rows: 1fr;
 }
 
 .hiw {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
   text-align: center;
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.5);
 }
 
 .description {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
   text-align: center;
   color: #ffffff;
 }
 
+
 .card {
-  border-radius: 70px;
-  background: linear-gradient(167deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.00) 100%);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  filter: blur(2px);
-}
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 0.5rem;
+    max-width: 257;
+  }
 
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 2rem;
+  margin: 0;
+  flex-shrink: 0;
 }
 
 /* .card {
